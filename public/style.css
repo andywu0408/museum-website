@@ -1,0 +1,133 @@
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+    margin: 6px 0;
+}
+#header-text1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #2a2d7c;
+}
+#header-text2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #c9523d;
+    font-weight: bold;
+}
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 36px;
+    margin: 6px 30px;
+}
+.button {
+    padding: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+.board {
+    width: 100%;
+    background-color: #000000;
+    height: 168px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#visits{
+    color: #f2f2f2;
+    font-size: 52px;
+    font-family: 'Montserrat', sans-serif;
+}
+.show-title-container{
+    height: 96px;
+    width: 100%;
+    margin: 6px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Open+Sans', sans-serif;
+    font-weight: bold;
+}
+#artist{
+    font-size: 22px;
+    margin: 8px 36px;
+    text-align: center;
+    font-family: 'Open+Sans', sans-serif;
+}
+#date{
+    font-size: 14px;
+    margin-top: 12px;
+    font-family: 'Open+Sans', sans-serif;
+}
+.carousel-container{
+    height: 300px;
+    width: 100%;
+}
+.dots-container {
+    display: flex;
+    justify-content: center;
+    margin: 14px 0;
+    height: 10%;
+}
+.img-container {
+    height: 90%;
+}
+img {
+    height: 100%;
+    width: 100%
+}
+.transp-dot {
+    height: 14px;
+    width: 14px;
+    background-color: #000000;
+    opacity: 30%;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 4px;
+}
+.dot {
+    height: 14px;
+    width: 14px;
+    background-color: #000000;
+    opacity: 70%;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 4px;
+}
+main {
+    margin: 14px 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#guest {
+    margin-top: 20px;
+}
+
+footer {
+    padding: 20px 14px 8px;
+    background-color: #c6d2da;
+}
+
+footer h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 12px;
+    color: #000000;
+}
+
+.content {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    color: #000000;
+    opacity: 70%;
+    margin: 10px 0;
+    line-height: 12px;
+}
