@@ -1,3 +1,7 @@
+body {
+    width: 100%;
+    height: 100%;
+}
 .header-container {
     display: flex;
     justify-content: center;
@@ -62,37 +66,103 @@
     margin-top: 12px;
     font-family: 'Open+Sans', sans-serif;
 }
-.carousel-container{
-    height: 300px;
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    font-family: 'Open+Sans', sans-serif;
+}
+.slides {
+    display: none;
+}
+.slides.fade {
+    display: flex;
+    flex-direction: column;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.text {
+    color: #f2f2f2;
+    font-size: 14px;
+    margin: 0 10px;
+    position: absolute;
+    bottom: -3px;
+    text-align: center;
+    height: 15%;
+}
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+#blackbox {
+    height: 50px;
+    background-color: black;
+    width: 100%;
+    margin-top:-4px;
+}
+.active, .dot:hover {
+background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.slide-pic{
+    height: 75%;
     width: 100%;
 }
-.dots-container {
-    display: flex;
-    justify-content: center;
-    margin: 14px 0;
-    height: 10%;
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }
 .img-container {
     height: 90%;
-}
-img {
-    height: 100%;
-    width: 100%
 }
 .transp-dot {
     height: 14px;
     width: 14px;
     background-color: #000000;
     opacity: 30%;
-    border-radius: 50%;
-    display: inline-block;
-    margin: 0 4px;
-}
-.dot {
-    height: 14px;
-    width: 14px;
-    background-color: #000000;
-    opacity: 70%;
     border-radius: 50%;
     display: inline-block;
     margin: 0 4px;
